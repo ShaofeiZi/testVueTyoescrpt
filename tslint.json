@@ -1,0 +1,26 @@
+{
+  "no-any": true, //不需使用any类型
+  "no-reference": true, // 禁止使用/// <reference path=> 导入 ，使用import代替
+  "no-unnecessary-type-assertion": true, //如果类型断言没有改变表达式的类型就发出警告
+  "no-var-requires": true, //不允许使用var module = require("module"),用 import foo = require('foo')导入
+  "await-promise": true, //警告不是一个promise的await
+  "curly": true, //for if do while 要有括号
+  "import-blacklist": true, //允许使用import require导入具体的模块
+  "label-postion": true, //允许在do/for/while/swith中使用label
+  "no-arg": true, //不允许使用 argument.callee
+  "no-console": true, //不能使用console
+  "no-duplicate-super": true, //构造函数两次用super会发出警告
+  "no-empty": true, //不允许空的块
+  "no-invalid-this": true, //不允许在非class中使用 this关键字
+  "no-misused-new": true, //禁止定义构造函数或new class
+  "arrow-parens": true, //箭头函数定义的参数需要括号
+  "triple-equals": true, // 必须用 === 代替 ==
+  "no-unused-expression": {
+    "allowShortCircuit": true,
+    "allowTernary": true,
+    "allowTaggedTemplates": true
+  },
+  "no-floating-promises": false,
+  "semicolon": [true, "always", "ignore-interfaces"],
+  "type-literal-delimiter": false
+}
